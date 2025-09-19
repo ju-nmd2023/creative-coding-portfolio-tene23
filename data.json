@@ -4,5 +4,11 @@
     "file": "assignments/week1v1.js",
     "name": "Playful Squares",
     "description": "Assignment week one. I did an inspired version of Dialog Between Emotion and Method created by Vera Molnar. This is the first version where I played with randomness and colors"
+  },
+
+  {
+    "file": "assignments/week1v2.js",
+    "name": "Sunny Squares",
+    "description": "Assignment week one. I did an inspired version of Dialog Between Emotion and Method created by Vera Molnar. This is the second version where I changed the variance, changing the look of the squares. The color palette is inspired by sky and sunset"
   }
 ]
