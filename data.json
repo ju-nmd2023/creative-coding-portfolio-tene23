@@ -1,7 +1,8 @@
 [
+
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "file": "assignments/week1.js",
+    "name": "Playful Squares",
+    "description": "Assignment week one. I did an inspired version of Dialog Between Emotion and Method created by Vera Molnar. This is the first version where I played with randomness and colors"
   }
 ]
