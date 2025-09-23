@@ -5,12 +5,13 @@ function setup() {
 
 
 const size = 100;//size of each element
-const layers = 6; //number of rows/ layers in each element
+const layers = 10; //number of rows/ layers in each element
 
 const colors = [
-     [240,24,24],//red
+     [240,24,24],//red   
      [104, 167, 186], //lightblue
      [255, 255, 255],    
+     [40, 47, 97], //purple
      [65, 138, 17],//green
      [194, 114, 166],//pink
      [255, 255, 0] //yellow
@@ -20,20 +21,20 @@ function getRandomValue(pos, variance) { //takes a position
     return pos + map(Math.random(), 0,1,- variance, variance); //map, maps from one system to a different system. We get back a random number between 0-1
 }
 
-  
+      
 //Function to draw the single element
 function drawLayers(x, y ,size, layers) {
     let colorIndex = Math.floor(Math.random() * colors.length);//Picks a random number (0, 1, 2, 3, 4, or 5) to choose which color from the array
     let chosenColor = colors[colorIndex];                        // Get the color array at that index
     stroke(chosenColor[0], chosenColor[1], chosenColor[2]);     // Use R, G, B values
     strokeWeight(3); 
-    // const half = size / 2;
-    //define a variance
-    const variance = size / 7; // here varianve is 10 pixels for every direction
+    // const half = size / 2;   
+    //define a variance  
+    const variance = size / 6; // here varianve is 10 pixels for every direction
     noFill();
     //rectMode(CENTER); This would center all rectangles within eachother
     for(let i = 0; i < layers; i++) { //A for loop. Add 1 layer until 10
-        if(Math.random()> 0.9) { //Randomize look
+        if(Math.random()> 10) { //Randomize look
             continue;
         }      
         const s = (size / layers) * i; //make the rectangle smaller. s= size, original size
