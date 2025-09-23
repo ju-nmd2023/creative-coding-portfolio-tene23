@@ -1,3 +1,4 @@
+//Disco dancefloor
 function setup() {
     createCanvas(innerWidth, innerHeight);
     frameRate(3);
