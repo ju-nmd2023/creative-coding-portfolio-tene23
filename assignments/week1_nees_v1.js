@@ -21,7 +21,7 @@ function draw() {
 
   let y = (height - size * amountY - gap * (amountY - 1)) / 2;
   // let rotation = 0;
-  let time = frameCount * 0.05; // Slow down the animation
+  let time = frameCount * 0.7; // Slow down the animation
 
   for (let i = 0; i < amountY; i++) {
     let x = (width - size * amountX - gap * (amountX - 4)) / 2;
@@ -64,5 +64,5 @@ function draw() {
     y += size + gap;
   }
 
-  //noLoop();
+  noLoop();
 }
