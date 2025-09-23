@@ -25,12 +25,12 @@
   {
     "file": "assignments/week1_nees_v1.js",
     "name": "Squares falling",
-    "description": "Assignment week one."
+    "description": "Assignment week one. I used noise for coloring. The color fradually fades between different shades of red"
   },
 
   {
     "file": "assignments/week1_nees_v2.js",
     "name": "Squares falling",
-    "description": "Assignment week one."
+    "description": "Assignment week one. I used noise for coloring. The colors fade around rainbow colors, and also included movement"
   }
 ]
