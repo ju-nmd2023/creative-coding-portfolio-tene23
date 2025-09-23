@@ -1,7 +1,7 @@
 [
   {
     "file": "assignments/week1_molnar_og.js",
-    "name": "Playful Squares",
+    "name": "Scribbled Squares",
     "description": "Assignment week one. I attempted to recreate Dialog Between Emotion and Method created by Vera Molnar. I used randomness and colors, and played with stroke weight"
   },
   {
@@ -13,6 +13,6 @@
   {
     "file": "assignments/week1v2.js",
     "name": "Conflicting method and emotion",
-    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. This piece reflects me being conflicted between being objective, organized and chaotic"
+    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element. This piece reflects me being conflicted between being objective, organized and chaotic"
   }
 ]
