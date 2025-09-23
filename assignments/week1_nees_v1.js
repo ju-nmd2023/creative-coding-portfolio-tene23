@@ -14,7 +14,7 @@ function draw() {
   background(255, 255, 255);
   noFill();
   stroke(0, 0, 0);
-  strokeWeight(1);
+
 
   let y = (height - size * amountY - gap * (amountY - 1)) / 2;
   let rotation = 0;
@@ -24,6 +24,9 @@ function draw() {
 //Calculate rotation based on Y position (row number)
     // Add some randomness that increases with each row
     let baseRotation = (i / amountY) * 0.5;
+
+    let weight = map(i, 0, amountY - 2, 2, 0.5);
+    strokeWeight(weight);
 
     for (let k = 0; k < amountX; k++) {
       push();
