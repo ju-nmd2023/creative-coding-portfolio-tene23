@@ -1,4 +1,5 @@
 // //Schotter By Georg Nees (1968)
+//Squares falling
 // //My attempt on recreating the original artpiece
 const size = 60;
 const gap = 0;

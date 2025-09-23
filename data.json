@@ -19,18 +19,18 @@
   {
     "file": "assignments/week1_nees_og.js",
     "name": "Squares falling",
-    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element. This piece reflects me being conflicted between being objective, organized and chaotic"
+    "description": "Assignment week one. My attempt on Schotter by Georg Nees (1968). I started working from Grid example step 04, and then switched so the rotation occur with the y axis only. More and more rotation as the y goes further down"
   },
 
   {
     "file": "assignments/week1_nees_v1.js",
     "name": "Squares falling",
-    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element. This piece reflects me being conflicted between being objective, organized and chaotic"
+    "description": "Assignment week one."
   },
 
   {
     "file": "assignments/week1_nees_v2.js",
     "name": "Squares falling",
-    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element. This piece reflects me being conflicted between being objective, organized and chaotic"
+    "description": "Assignment week one."
   }
 ]
