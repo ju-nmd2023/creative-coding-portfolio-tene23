@@ -1,11 +1,11 @@
 [
   {
-    "file": "assignments/week1original.js",
+    "file": "assignments/week1_molnar_og.js",
     "name": "Playful Squares",
     "description": "Assignment week one. I attempted to recreate Dialog Between Emotion and Method created by Vera Molnar. I used randomness and colors, and played with stroke weight"
   },
   {
-    "file": "assignments/week1v1.js",
+    "file": "assignments/week1_molnar_v1.js",
     "name": "Disco Dancefloor",
     "description": "Assignment week one. An inspired version of Dialog Between Emotion and Method created by Vera Molnar. I played with randomness, strokeweights, neon colors and movement. I changed the map value in the get random value function in order to create more ordered sqaure shapes. "
   },
