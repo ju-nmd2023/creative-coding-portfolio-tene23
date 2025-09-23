@@ -1,6 +1,6 @@
 //Disco dancefloor
 function setup() {
-    createCanvas(innerWidth, innerHeight);
+    createCanvas(600, 600);
     frameRate(3);
 }
 
@@ -78,5 +78,5 @@ function draw() {
         }
     }
 
-     noLoop();
+     //noLoop();
 }

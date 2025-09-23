@@ -1,6 +1,6 @@
 //Recreation of the original work Dialogue between emotions by Vera Molnar
 function setup() {
-    createCanvas(innerWidth, innerHeight);
+    createCanvas(600, 600);
 }
 
 

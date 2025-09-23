@@ -1,6 +1,6 @@
 //Conflicting method and emotion
 function setup() {
-    createCanvas(innerWidth, innerHeight);
+    createCanvas(600, 600);
 }
 
 

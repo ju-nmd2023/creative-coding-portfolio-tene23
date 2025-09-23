@@ -11,8 +11,26 @@
   },
 
   {
-    "file": "assignments/week1v2.js",
+    "file": "assignments/week1_molnar_v2.js",
     "name": "Conflicting method and emotion",
+    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element. This piece reflects me being conflicted between being objective, organized and chaotic"
+  },
+
+  {
+    "file": "assignments/week1_nees_og.js",
+    "name": "Squares falling",
+    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element. This piece reflects me being conflicted between being objective, organized and chaotic"
+  },
+
+  {
+    "file": "assignments/week1_nees_v1.js",
+    "name": "Squares falling",
+    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element. This piece reflects me being conflicted between being objective, organized and chaotic"
+  },
+
+  {
+    "file": "assignments/week1_nees_v2.js",
+    "name": "Squares falling",
     "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element. This piece reflects me being conflicted between being objective, organized and chaotic"
   }
 ]
