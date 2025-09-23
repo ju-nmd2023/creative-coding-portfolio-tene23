@@ -1,4 +1,5 @@
 //Disco dancefloor
+//Using random for color, look and movement
 function setup() {
     createCanvas(600, 600);
     frameRate(3);

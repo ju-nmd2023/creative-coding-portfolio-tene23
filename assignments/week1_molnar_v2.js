@@ -1,4 +1,5 @@
 //Conflicting method and emotion
+//Using variation. Every third item is different
 function setup() {
     createCanvas(600, 600);
 }

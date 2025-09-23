@@ -1,4 +1,5 @@
 //Recreation of the original work Dialogue between emotions by Vera Molnar
+//Using random for color and appearence
 function setup() {
     createCanvas(600, 600);
 }

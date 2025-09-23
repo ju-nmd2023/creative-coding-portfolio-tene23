@@ -13,7 +13,7 @@ function setup() {
 function draw() {
   background(255, 255, 255);
   noFill();
-  stroke(0, 0, 0);
+  stroke(255, 0, 50);
 
 
   let y = (height - size * amountY - gap * (amountY - 1)) / 2;
