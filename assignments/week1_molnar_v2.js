@@ -11,6 +11,7 @@ const layers = 12; //number of rows/ layers in each element
 //function manipulate the different layers random, adds a random variant.
 function getRandomValue(pos, variance, isUnorganized) { //takes a position
     const varianceReduction = isUnorganized ? 1:8;//Less reduction for unorganized squares
+    // The next line of code was retreived from p5js website. https://p5js.org/reference/p5/map/
     return pos + map(Math.random(), 0,1,- variance/varianceReduction, variance/varianceReduction); //map, maps from one system to a different system. We get back a random number between 0-1. I reduce the variance number by 8 to create an ordered appearence
 } 
 

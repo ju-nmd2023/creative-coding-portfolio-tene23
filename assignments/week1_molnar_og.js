@@ -1,7 +1,8 @@
 //Recreation of the original work Dialogue between emotions by Vera Molnar
 //Using random for color and appearence
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(innerWidth, innerHeight);
+    background(0);
 }
 
 
@@ -73,9 +74,9 @@ function draw() {
     // drawLayers(100, 100, size, layers);
 
     //Now we want to put the rectangle with layers in a grid, just as the original artwork. This is done with a for loop
-    for(let y = 0; y < 10; y++) {
-        for(let x = 0; x <10; x++) {
-            drawLayers(size / 2 + x * size, size / 2 + y * size, size, layers);
+    for(let y = 0; y < 6; y++) {
+        for(let x = 0; x < 6; x++) {
+            drawLayers(width / 2 + x * size, size / 2 + y * size, size, layers);
         }
     }
 

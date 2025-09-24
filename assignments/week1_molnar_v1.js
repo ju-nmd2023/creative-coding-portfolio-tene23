@@ -1,8 +1,10 @@
 //Disco dancefloor
 //Using random for color, look and movement
 function setup() {
-    createCanvas(600, 600);
+    createCanvas(innerWidth, innerHeight);
     frameRate(3);
+    background(0);
+
 }
 
 
@@ -17,6 +19,7 @@ const colors = [
      [208, 255, 0] //yellow
  ];
 //function manipulate the different layers random, adds a random variant.
+// The next line of code was retreived from p5js website. https://p5js.org/reference/p5/map/
 function getRandomValue(pos, variance) { //takes a position
     return pos + map(Math.random(), 0,1,- variance/4, variance/4); //map, maps from one system to a different system. We get back a random number between 0-1. I reduce the variance, divided by 4 to get a more organized look
 }
@@ -73,8 +76,8 @@ function draw() {
     // drawLayers(100, 100, size, layers);
 
     //Now we want to put the rectangle with layers in a grid, just as the original artwork. This is done with a for loop
-    for(let y = 0; y < 12; y++) {
-        for(let x = 0; x <12; x++) {
+    for(let y = 0; y < 6; y++) {
+        for(let x = 0; x <6; x++) {
             drawLayers(size / 2 + x * size, size / 2 + y * size, size, layers);
         }
     }
