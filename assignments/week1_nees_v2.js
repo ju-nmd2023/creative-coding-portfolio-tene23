@@ -8,7 +8,7 @@ const amountX = 5;
 const amountY = 7;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(innerWidth, innerHeight);
 
   frameRate(30);
 }
