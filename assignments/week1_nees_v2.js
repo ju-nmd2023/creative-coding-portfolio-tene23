@@ -36,11 +36,11 @@ function draw() {
 
 
       let redColors = [
-        [255, 0, 0],    // Very dark red
-        [255, 155, 0],   // Dark red
-        [0, 0, 250],   // Medium red
-        [145, 40, 240],   // Light red
-        [250, 100, 170]    // Bright red
+        [78, 184, 245],    // blue
+        [163, 235, 143],   // green
+        [173, 50, 186],   // pink
+        [28, 189, 135],   // Light red
+        [230, 228, 163]    // yellow
       ];
 
 

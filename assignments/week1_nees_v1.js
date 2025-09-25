@@ -14,14 +14,14 @@ function setup() {
 }
 
 function draw() {
-  background(255, 255, 255);
+  background(0);
   noFill();
   stroke(255, 0, 50);
 
 
   let y = (height - size * amountY - gap * (amountY - 1)) / 2;
   // let rotation = 0;
-  let time = frameCount * 0.7; // Slow down the animation
+  let time = frameCount * 0.1; // Slow down the animation
 
   for (let i = 0; i < amountY; i++) {
     let x = (width - size * amountX - gap * (amountX - 4)) / 2;
@@ -40,11 +40,11 @@ function draw() {
       let noRotation = random(-baseRotation, baseRotation);
 
       let redColors = [
-        [80, 0, 0],    // Very dark red
-        [120, 0, 0],   // Dark red
-        [160, 0, 0],   // Medium red
-        [200, 0, 0],   // Light red
-        [255, 0, 0]    // Bright red
+        [255, 3, 255],    // neonpink
+        [255, 51, 0],   // red
+        [0, 242, 255],   // blue
+        [0, 245, 98],   // green
+        [0, 86, 235]    // Bright red
       ];
 
 
@@ -64,5 +64,5 @@ function draw() {
     y += size + gap;
   }
 
-  noLoop();
+  //noLoop();
 }

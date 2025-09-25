@@ -8,6 +8,7 @@ function setup() {
 
 const size = 100;//size of each element
 const layers = 10; //number of rows/ layers in each element
+const gridSize = 6;
 
 const colors = [
      [240,24,24],//red   
