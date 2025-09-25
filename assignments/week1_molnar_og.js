@@ -1,7 +1,7 @@
 //Recreation of the original work Dialogue between emotions by Vera Molnar
 //Using random for color and appearence
 function setup() {
-    createCanvas(innerWidth, innerHeight);
+    createCanvas(600, 600);
     background(0);
 }
 
@@ -16,7 +16,7 @@ const colors = [
      [255, 255, 255],    
      [40, 47, 97], //purple
      [65, 138, 17],//green
-     [194, 114, 166],//pink
+     [194, 114, 166],//pink 
      [255, 255, 0] //yellow
  ];
 //function manipulate the different layers random, adds a random variant.
@@ -31,7 +31,7 @@ function drawLayers(x, y ,size, layers) {
     let chosenColor = colors[colorIndex];                        // Get the color array at that index
     stroke(chosenColor[0], chosenColor[1], chosenColor[2]);     // Use R, G, B values
     strokeWeight(3); 
-    // const half = size / 2;   
+    //const half = size / 2;   
     //define a variance  
     const variance = size / 6; // here varianve is 10 pixels for every direction
     noFill();
@@ -70,14 +70,16 @@ function drawLayers(x, y ,size, layers) {
 
 
 function draw() {
-    background(0,0,0); 
+    background(0); 
+
+
 
     // drawLayers(100, 100, size, layers);
 
     //Now we want to put the rectangle with layers in a grid, just as the original artwork. This is done with a for loop
-    for(let y = 0; y < 6; y++) {
-        for(let x = 0; x < 6; x++) {
-            drawLayers(width / 2 + x * size, size / 2 + y * size, size, layers);
+    for(let y = 0; y < gridSize; y++) {
+        for(let x = 0; x < gridSize; x++) {
+            drawLayers(size / 2 + x * size, size / 2 + y * size, size, layers);
         }
     }
 
