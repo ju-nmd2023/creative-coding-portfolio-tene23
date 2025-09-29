@@ -32,5 +32,10 @@
     "file": "assignments/week1_nees_v2.js",
     "name": "Bubble Bath",
     "description": "Assignment week one. I used noise for coloring. The colors fade around rainbow colors, and also included movement. The circles increase ini size further down"
+  },
+ {
+    "file": "assignments/week2_hobbs_og.js",
+    "name": "Ocean",
+    "description": "Assignment week two. This is my recreation of Slow Lessons, 2019 created by Tyler Hobbs. I used flowfield for movement and randomized colors with math.random"
   }
 ]

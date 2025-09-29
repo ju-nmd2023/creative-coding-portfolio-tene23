@@ -7,13 +7,14 @@ function setup() {
     
 }
 
-      let blueColors = [
-        [255, 3, 255],    // neonpink
-        [255, 51, 0],   // red
-        [0, 242, 255],   // blue
-        [0, 245, 98],   // green
-        [0, 86, 235]    // Bright red
-      ];
+const colors = [
+  [92, 139, 173],
+  [230, 230, 230],
+  [145, 180, 194],
+  [71, 111, 148],
+  [45, 83, 133],
+  [33, 57, 110]
+];
 
 class Agent {
   constructor(x, y, maxSpeed, maxForce) {
@@ -23,8 +24,7 @@ class Agent {
     this.velocity = createVector(0, 0);
     this.maxSpeed = maxSpeed;
     this.maxForce = maxForce;
-
-    this.col = random(blueColors);
+    this.color = random(colors);
   }
 
   follow(desiredDirection) {
@@ -62,13 +62,13 @@ class Agent {
     } else if (this.position.y > innerHeight) {
       this.position.y = 0;
       this.lastPosition.y = 0;
-    }
+    } 
   }
 
   draw() {
     push();
-    stroke(this.col);
-    strokeWeight(1);
+    stroke(this.color[0], this.color[1], this.color[2]);
+    strokeWeight(3);
     line(
       this.lastPosition.x,
       this.lastPosition.y,
@@ -121,14 +121,7 @@ function draw() {
     agent.checkBorders();
     agent.draw();
   }
-      let blueColors = [
-        [36, 59, 112],    // neonpink
-        [93, 112, 158],   // red
-        [232, 229, 225],   // blue
-        [121, 168, 184],   // green
-        [191, 209, 217],
-        [203, 213, 214]    // Bright red
-      ];
+
 
 }
 
