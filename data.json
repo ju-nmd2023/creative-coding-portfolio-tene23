@@ -2,45 +2,53 @@
   {
     "file": "assignments/week1_molnar_og.js",
     "name": "Scribbled Squares",
-    "description": "Assignment week one. I attempted to recreate Dialog Between Emotion and Method created by Vera Molnar. I used randomness for colors and look, and played with stroke weight"
+    "description": "Assignment week one. An attempt to recreate Dialog Between Emotion and Method created by Vera Molnar. I used randomness for colors and look, and played with stroke weight"
   },
   {
     "file": "assignments/week1_molnar_v1.js",
     "name": "Disco Dancefloor",
-    "description": "Assignment week one. An inspired version of Dialog Between Emotion and Method created by Vera Molnar. I played with randomness for changing color, placements and movements. I changed the map value in the get random value function in order to create more ordered sqaure shapes. "
+    "description": "Assignment week one. My first variation of Dialog Between Emotion and Method created by Vera Molnar. I played with randomness for changing color, placements and movements. I changed the map value in the get random value function in order to create more ordered sqaure shapes. "
   },
 
   {
     "file": "assignments/week1_molnar_v2.js",
     "name": "Conflicting method and emotion",
-    "description": "Assignment week one. My version of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element, which becomes different. This piece reflects me being conflicted between being objective, organized and chaotic"
+    "description": "Assignment week one. My second variation of Dialog Between Emotion and Method created by Vera Molnar. I used variation and reduced variance every third element, which becomes different. This piece reflects me being conflicted between being objective, organized and chaotic"
   },
 
   {
     "file": "assignments/week1_nees_og.js",
     "name": "Squares falling",
-    "description": "Assignment week one. My attempt on Schotter by Georg Nees (1968). I started working from Grid example step 04, and then switched so the rotation occur with the y axis only. More and more rotation as the y goes further down"
+    "description": "Assignment week one. Recreation of Schotter by Georg Nees (1968). I started working from Grid example step 04, and then switched so the rotation occur with the y axis only. More and more rotation as the y goes further down"
   },
 
   {
     "file": "assignments/week1_nees_v1.js",
     "name": "Squares falling",
-    "description": "Assignment week one. I used noise for coloring. The color fades between different neon colors"
+    "description": "Assignment week one. My first variation of Shotter by Georg Nees. I used noise for coloring. The color fades between different neon colors"
   },
 
   {
     "file": "assignments/week1_nees_v2.js",
     "name": "Bubble Bath",
-    "description": "Assignment week one. I used noise for coloring. The colors fade around rainbow colors, and also included movement. The circles increase ini size further down"
+    "description": "Assignment week one. Second variation. I used noise for coloring. The colors fade around rainbow colors, and also included movement. The circles increase ini size further down"
   },
+
  {
     "file": "assignments/week2_hobbs_og.js",
     "name": "Ocean",
-    "description": "Assignment week two. This is my recreation of Slow Lessons, 2019 created by Tyler Hobbs. I used flowfield for movement and randomized colors with math.random"
+    "description": "Assignment week two. My recreation of Slow Lessons, 2019 created by Tyler Hobbs. I used flowfield for movement and randomized colors with math.random"
   },
+
    {
     "file": "assignments/week2_hobbs_v1.js",
     "name": "Its raining men",
-    "description": "Assignment week two. A version of the original. Two men and rain"
+    "description": "Assignment week two. My first variation. Two men and rain"
+  },
+
+   {
+    "file": "assignments/week2_hobbs_v2.js",
+    "name": "Ebb and flow",
+    "description": "Assignment week two. My second variation. The lines / water are following the movement of the mouse"
   }
 ]

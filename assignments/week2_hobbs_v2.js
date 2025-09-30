@@ -1,4 +1,5 @@
 //Recreation of Slow Lessons by Tyler Hobbs
+//I also used Kaleidoscope experiment to help me
 let position;
 let velocity;
 let acceleration;
