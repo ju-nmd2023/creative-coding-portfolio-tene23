@@ -1,7 +1,5 @@
 //Recreation of Slow Lessons by Tyler Hobbs
-let menY = 50;
-let umbrellaY = 30;
-
+let menY = 80;
 
 function setup() {
     createCanvas(600,800);
@@ -103,7 +101,7 @@ function generateAgents() {
     let agent = new Agent(
       Math.random() * innerWidth,
       Math.random() * innerHeight,
-      4,
+      3,
       0.1
     );
     agents.push(agent);
@@ -129,17 +127,11 @@ function draw() {
     // arc();
   }
  
-  //Line 145-151 was gathered from Claude.ai 29-09-2025
-
-  menY += 3;
+  //The following 3 lines of code was gathered from Claude.ai 30-09-2025
+  menY += 2;
   if(menY > height + 50) {
-    menY = -50;
+    menY = -40;
   }
-
-  // umbrellaY += 3;
-  // if(umbrellaY > height + 50) {
-  //   umbrellaY =
-  // }
 
   textSize(80);
   textAlign();
@@ -150,7 +142,8 @@ function draw() {
   text("☂️", 100, 140);
   text("☂️", 300, 250);
   text("☂️", 70, 400);
-  text("☂️", 480, 500);
+  text("☂️", 600, 500);
+
 
 
 

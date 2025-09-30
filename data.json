@@ -40,7 +40,7 @@
   },
    {
     "file": "assignments/week2_hobbs_v1.js",
-    "name": "its raining men",
-    "description": "Assignment week two. This is my recreation of Slow Lessons, 2019 created by Tyler Hobbs. I used flowfield for movement and randomized colors with math.random"
+    "name": "Its raining men",
+    "description": "Assignment week two. A version of the original. Two men and rain"
   }
 ]

@@ -94,11 +94,11 @@ function generateField() {
 }
 
 function generateAgents() {
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 100; i++) {
     let agent = new Agent(
       Math.random() * innerWidth,
       Math.random() * innerHeight,
-      4,
+      2,
       0.1
     );
     agents.push(agent);
@@ -123,7 +123,7 @@ function draw() {
     agent.draw();
   }
 
-//noLoop();
+
 }
 
 //noLoop();
