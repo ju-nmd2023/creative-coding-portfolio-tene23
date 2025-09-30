@@ -1,10 +1,13 @@
 //Recreation of Slow Lessons by Tyler Hobbs
+let menY = 50;
+let umbrellaY = 30;
+
+
 function setup() {
     createCanvas(600,800);
     background(255);
     field = generateField();
     generateAgents();
-    frameRate();
     
 }
 
@@ -69,7 +72,7 @@ class Agent {
   draw() {
     push();
     stroke(this.color[0], this.color[1], this.color[2]);
-    strokeWeight(8);
+    strokeWeight(3);
     line(
       this.lastPosition.x,
       this.lastPosition.y,
@@ -86,8 +89,10 @@ function generateField() {
   for (let x = 0; x < maxCols; x++) {
     field.push([]);
     for (let y = 0; y < maxRows; y++) {
-      const value = (noise(x / divider, y / divider) * 0.7) * -0.5;
-      field[x].push(p5.Vector.fromAngle(value));
+      const value = (noise(x / divider, y / divider) * 1) * -0.5;
+      const directionDown = PI / 2 + value ;
+      //field[x].push(p5.Vector.fromAngle(value));
+     field[x].push(p5.Vector.fromAngle(directionDown));
     }
   }
   return field;
@@ -121,9 +126,41 @@ function draw() {
     agent.update();
     agent.checkBorders();
     agent.draw();
+    // arc();
+  }
+ 
+  //Line 145-151 was gathered from Claude.ai 29-09-2025
+
+  menY += 3;
+  if(menY > height + 50) {
+    menY = -50;
   }
 
-//noLoop();
-}
+  // umbrellaY += 3;
+  // if(umbrellaY > height + 50) {
+  //   umbrellaY =
+  // }
+
+  textSize(80);
+  textAlign();
+  text("🧍🏻‍♂️", 150, menY);
+  text("🧍🏻‍♂️", 350, menY);
+  textSize(50);
+  text("☂️", 450, 80);   
+  text("☂️", 100, 140);
+  text("☂️", 300, 250);
+  text("☂️", 70, 400);
+  text("☂️", 480, 500);
+
+
+
+
+  
+
+    // textSize(80);
+    // // textAlign();
+    // text("☂️", 150, 140);
+
+}  
 
 //noLoop();
