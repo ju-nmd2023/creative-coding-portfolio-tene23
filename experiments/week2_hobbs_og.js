@@ -1,4 +1,5 @@
 //Recreation of Slow Lessons by Tyler Hobbs
+//Based on Garrits code Flow field example 03: https://codepen.io/pixelkind/pen/OJrRzOm 
 function setup() {
     createCanvas(600,800);
     background(255);

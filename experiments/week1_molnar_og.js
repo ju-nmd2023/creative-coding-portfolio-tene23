@@ -1,4 +1,5 @@
 //Recreation of the original work Dialogue between emotions by Vera Molnar
+//Based on Garrits code and recording: https://play.ju.se/media/Noise+examples,+and+Vera+Moln%C3%A1r/0_3pcpvm3q
 //Using random for color and appearence
 function setup() {
     createCanvas(600, 600);
@@ -6,8 +7,8 @@ function setup() {
 }
 
 
-const size = 100;//size of each element
-const layers = 10; //number of rows/ layers in each element
+const size = 100;
+const layers = 10; 
 const gridSize = 6;
 
 const colors = [
@@ -27,16 +28,15 @@ function getRandomValue(pos, variance) { //takes a position
       
 //Function to draw the single element
 function drawLayers(x, y ,size, layers) {
-    let colorIndex = Math.floor(Math.random() * colors.length);//Picks a random number (0, 1, 2, 3, 4, or 5) to choose which color from the array
-    let chosenColor = colors[colorIndex];                        // Get the color array at that index
-    stroke(chosenColor[0], chosenColor[1], chosenColor[2]);     // Use R, G, B values
-    strokeWeight(3); 
-    //const half = size / 2;   
-    //define a variance  
-    const variance = size / 6; // here varianve is 10 pixels for every direction
+    let colorIndex = Math.floor(Math.random() * colors.length);
+    let chosenColor = colors[colorIndex];                        
+    stroke(chosenColor[0], chosenColor[1], chosenColor[2]);  
+    strokeWeight(3);  
+  
+    const variance = size / 6;
     noFill();
-    //rectMode(CENTER); This would center all rectangles within eachother
-    for(let i = 0; i < layers; i++) { //A for loop. Add 1 layer until 10
+   
+    for(let i = 0; i < layers; i++) { //for loop. Add 1 layer until 10
         if(Math.random()> 10) { //Randomize look
             continue;
         }      
@@ -63,7 +63,7 @@ function drawLayers(x, y ,size, layers) {
     );
         
     endShape(CLOSE);//closes the shape
-        // rect(x-half, y-half, s, s);// draw rectangle. (x,y,width,height)
+        
     }
 }
 
@@ -72,11 +72,7 @@ function drawLayers(x, y ,size, layers) {
 function draw() {
     background(0); 
 
-
-
-    // drawLayers(100, 100, size, layers);
-
-    //Now we want to put the rectangle with layers in a grid, just as the original artwork. This is done with a for loop
+    //Put the rectangle with layers in a grid = using a for loop
     for(let y = 0; y < gridSize; y++) {
         for(let x = 0; x < gridSize; x++) {
             drawLayers(size / 2 + x * size, size / 2 + y * size, size, layers);

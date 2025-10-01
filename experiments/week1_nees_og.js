@@ -1,6 +1,7 @@
-// //Schotter By Georg Nees (1968)
-//Squares falling
-// //My attempt on recreating the original artpiece
+//Schotter By Georg Nees (1968)
+//My Name: Squares falling
+//My attempt on recreating the original artpiece
+//Based on Garrits code Grid example step 4: https://codepen.io/pixelkind/pen/WNLraMw 
 const size = 60;
 const gap = 0;
 const amountX = 5;
@@ -21,7 +22,7 @@ function draw() {
 
   for (let i = 0; i < amountY; i++) {
     let x = (width - size * amountX - gap * (amountX - 1)) / 2;
-
+//The further down, the squares should rotate more
     let baseRotation = (i / amountY) * 0.5;
 
     for (let k = 0; k < amountX; k++) {
@@ -34,7 +35,7 @@ function draw() {
       square(0, 0, size);
       pop();
       x += size + gap;
-    //   rotation += 0.02;
+  
     }
     y += size + gap;
   }

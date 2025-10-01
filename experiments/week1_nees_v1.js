@@ -1,7 +1,6 @@
 // //Schotter By Georg Nees (1968)
 //Squares falling
-//My attempt on recreating the original artpiece
-//waterfall colors with noise
+//Swishing colors using noise
 const size = 50;
 const gap = 0;
 const amountX = 5;
@@ -47,7 +46,7 @@ function draw() {
         [0, 86, 235]    // Bright red
       ];
 
-
+//Line 50-63 was gathered from Claude.ai
       let noiseVal = noise(k * 0.1, i * 0.1, time);
       let colorIndex = floor(noiseVal * redColors.length); // Convert noise to array index
       let chosenColor = redColors[colorIndex];
@@ -59,7 +58,6 @@ function draw() {
       square(0, 0, size);
       pop();
       x += size + gap;
-    //   rotation += 0.02;
     }
     y += size + gap;
   }

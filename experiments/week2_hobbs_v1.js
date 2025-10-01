@@ -89,7 +89,6 @@ function generateField() {
     for (let y = 0; y < maxRows; y++) {
       const value = (noise(x / divider, y / divider) * 1) * -0.5;
       const directionDown = PI / 2 + value ;
-      //field[x].push(p5.Vector.fromAngle(value));
      field[x].push(p5.Vector.fromAngle(directionDown));
     }
   }
@@ -143,16 +142,6 @@ function draw() {
   text("☂️", 300, 250);
   text("☂️", 70, 400);
   text("☂️", 600, 500);
-
-
-
-
-
-  
-
-    // textSize(80);
-    // // textAlign();
-    // text("☂️", 150, 140);
 
 }  
 

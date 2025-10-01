@@ -1,12 +1,13 @@
 //Conflicting method and emotion
 //Using variation. Every third item is different
+//Based on the code from my: week1_molnar_og.js
 function setup() {
     createCanvas(600, 600);
 }
 
 
-const size = 100;//size of each element
-const layers = 12; //number of rows/ layers in each element
+const size = 100;
+const layers = 12; 
 
 //function manipulate the different layers random, adds a random variant.
 function getRandomValue(pos, variance, isUnorganized) { //takes a position
@@ -16,18 +17,16 @@ function getRandomValue(pos, variance, isUnorganized) { //takes a position
 } 
 
 
-//Function to draw the single element
 function drawLayers(x, y ,size, layers, isUnorganized) {
 
-    //define a variance
-    const variance = size / 10; // here varianve is 10 pixels for every direction// Changed variance to 10
+    const variance = size / 10; 
     noFill();
-    rectMode(CENTER); //This would center all rectangles within eachother
-    for(let i = 0; i < layers; i++) { //A for loop. Add 1 layer until 10
-        if(Math.random()> 0.7) { //Randomize look
+    rectMode(CENTER); 
+    for(let i = 0; i < layers; i++) { 
+        if(Math.random()> 0.7) { 
             continue;
         }    
-        const s = (size / layers) * i; //make the rectangle smaller. s= size, original size
+        const s = (size / layers) * i; 
         const half = s / 2;
         beginShape();
         vertex(
@@ -62,10 +61,7 @@ function draw() {
     let squareIndex = 0;
 
     const padding = 50;
-
-    // drawLayers(100, 100, size, layers);
-
-    //Now we want to put the rectangle with layers in a grid, just as the original artwork. This is done with a for loop
+//every third square should be unorganized = i use a for loop
     for(let y = 0; y < 10; y++) {
         for(let x = 0; x <10; x++) {
             let isUnorganized = (squareIndex % 3 ===0);

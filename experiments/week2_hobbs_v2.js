@@ -1,5 +1,5 @@
 //Recreation of Slow Lessons by Tyler Hobbs
-//I also used Kaleidoscope experiment to help me
+//I used Kaleidoscope example to base this code on
 let position;
 let velocity;
 let acceleration;

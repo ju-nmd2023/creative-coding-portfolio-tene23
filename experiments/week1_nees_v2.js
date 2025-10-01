@@ -1,6 +1,5 @@
 // //Schotter By Georg Nees (1968)
-//Squares falling
-//My attempt on recreating the original artpiece
+//Second variation with bubbles which becomes smaller further down. Swishing colors
 //waterfall colors with noise
 const size = 50;
 const gap = 0;

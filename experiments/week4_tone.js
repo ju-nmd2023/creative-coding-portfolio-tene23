@@ -11,12 +11,11 @@ function setup() {
     synth = new Tone.PolySynth().toDestination();
 }
 
-const size = 100;//size of each element
-const layers = 12; //number of rows/ layers in each element
-
+const size = 100;
+const layers = 12; 
 //function manipulate the different layers random, adds a random variant.
-function getRandomValue(pos, variance, isUnorganized) { //takes a position
-    const varianceReduction = isUnorganized ? 1:8;//Less reduction for unorganized squares
+function getRandomValue(pos, variance, isUnorganized) {
+    const varianceReduction = isUnorganized ? 1:8;
     // The next line of code was retreived from p5js website. https://p5js.org/reference/p5/map/
     return pos + map(Math.random(), 0,1,- variance/varianceReduction, variance/varianceReduction); //map, maps from one system to a different system. We get back a random number between 0-1. I reduce the variance number by 8 to create an ordered appearence
 }
@@ -25,14 +24,14 @@ function getRandomValue(pos, variance, isUnorganized) { //takes a position
 //Function to draw the single element
 function drawLayers(x, y ,size, layers, isUnorganized) {
     //define a variance
-    const variance = size / 10; // here varianve is 10 pixels for every direction// Changed variance to 10
+    const variance = size / 10; 
     noFill();
-    rectMode(CENTER); //This would center all rectangles within eachother
-    for(let i = 0; i < layers; i++) { //A for loop. Add 1 layer until 10
-        if(Math.random()> 0.7) { //Randomize look
+    rectMode(CENTER); 
+    for(let i = 0; i < layers; i++) { 
+        if(Math.random()> 0.7) { 
             continue;
         }    
-        const s = (size / layers) * i; //make the rectangle smaller. s= size, original size
+        const s = (size / layers) * i; 
         const half = s / 2;
         beginShape();
         vertex(
@@ -55,7 +54,7 @@ function drawLayers(x, y ,size, layers, isUnorganized) {
     );
         
     endShape(CLOSE);//closes the shape
-        // rect(x-half, y-half, s, s);// draw rectangle. (x,y,width,height)
+    
     }
 }
 
@@ -68,9 +67,7 @@ function draw() {
 
     const padding = 50;
 
-    // drawLayers(100, 100, size, layers);
 
-    //Now we want to put the rectangle with layers in a grid, just as the original artwork. This is done with a for loop
     for(let y = 0; y < 10; y++) {
         for(let x = 0; x <10; x++) {
             let isUnorganized = (squareIndex % 3 ===0);
