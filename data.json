@@ -43,18 +43,18 @@
    {
     "file": "experiments/week2_hobbs_v1.js",
     "name": "Its raining men",
-    "description": "Assignment week two. My first variation. Two men and rain"
+    "description": "Assignment week three. My first variation. Two men and rain"
   },
 
    {
     "file": "experiments/week2_hobbs_v2.js",
     "name": "Ebb and flow",
-    "description": "Assignment week two. My second variation. The lines / water are following the movement of the mouse"
+    "description": "Assignment week three. My second variation. Move the mouse across the canvas and the ocean will follow you"
   },
 
    {
     "file": "experiments/week4_tone.js",
-    "name": "Ebb and flow",
-    "description": "Assignment week two. My second variation. The lines / water are following the movement of the mouse"
+    "name": "Musical squares",
+    "description": "Assignment week four. I added sound to my work Conflicting method and emotion, using tone.js. Click the squares to play the synth "
   }
 ]
