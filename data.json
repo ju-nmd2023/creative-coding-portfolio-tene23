@@ -50,5 +50,11 @@
     "file": "assignments/week3_hobbs_v2.js",
     "name": "Ebb and flow",
     "description": "Assignment week two. My second variation. The lines / water are following the movement of the mouse"
+  },
+
+   {
+    "file": "assignments/week4_tone.js",
+    "name": "Ebb and flow",
+    "description": "Assignment week two. My second variation. The lines / water are following the movement of the mouse"
   }
 ]

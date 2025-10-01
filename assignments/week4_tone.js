@@ -1,9 +1,15 @@
-//Conflicting method and emotion
-//Using variation. Every third item is different
+//Here I am using the code and artwork from week two and i add sound using tone.js
+//To my help i have been using https://tonejs.github.io/
+// and Garrits code for poly synth: https://codepen.io/pixelkind/pen/RwEVVaw?editors=1010
+
+
+let synth;
+
 function setup() {
     createCanvas(600, 600);
+    // synth = new Tone.Synth().toDestination();
+    synth = new Tone.PolySynth().toDestination();
 }
-
 
 const size = 100;//size of each element
 const layers = 12; //number of rows/ layers in each element
@@ -18,7 +24,6 @@ function getRandomValue(pos, variance, isUnorganized) { //takes a position
 
 //Function to draw the single element
 function drawLayers(x, y ,size, layers, isUnorganized) {
-
     //define a variance
     const variance = size / 10; // here varianve is 10 pixels for every direction// Changed variance to 10
     noFill();
@@ -57,7 +62,7 @@ function drawLayers(x, y ,size, layers, isUnorganized) {
 
 
 function draw() {
-    background(214,76,60); 
+    background(109,148,106); 
 
     let squareIndex = 0;
 
@@ -81,4 +86,28 @@ function draw() {
     }
 
     noLoop();
+}
+
+//The following lines of code was gathered from claude.ai 01-10-2025
+function mousePressed() {
+    Tone.start();
+    
+    // Figure out which square was clicked
+    let col = floor(mouseX / size);
+    let row = floor(mouseY / size);
+    
+    // Make sure click is within grid
+    if(col >= 0 && col < 10 && row >= 0 && row < 10) {
+        let squareIndex = row * 10 + col;
+        let isUnorganized = (squareIndex % 3 === 0);
+        
+        const notes = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
+        
+        if(isUnorganized) {
+            synth.triggerAttackRelease("C3", "8n");
+        } else {
+            let noteIndex = squareIndex % notes.length;
+            synth.triggerAttackRelease(notes[noteIndex], "8n");
+        }
+    }
 }
