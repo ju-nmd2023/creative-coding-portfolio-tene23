@@ -46,5 +46,5 @@ if(position.y > height || position.y < 0) {
     velocity.limit(10);
     position.add(velocity);
 
-    //noLoop();
+    noLoop();
 }
